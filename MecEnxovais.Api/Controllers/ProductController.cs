@@ -7,7 +7,6 @@ namespace MecEnxovais.Api.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-[Authorize]
 public class ProductController : ControllerBase
 {
     private readonly IProductServices _productServices;
