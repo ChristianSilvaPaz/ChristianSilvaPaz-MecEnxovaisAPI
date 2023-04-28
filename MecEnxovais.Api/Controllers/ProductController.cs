@@ -7,6 +7,7 @@ namespace MecEnxovais.Api.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+[Authorize]
 public class ProductController : ControllerBase
 {
     private readonly IProductServices _productServices;
@@ -19,9 +20,7 @@ public class ProductController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<ProductResponseDTO>>> GetAsync()
     {
-        var products = new List<ProductResponseDTO>();
-
-        return Ok(products);
+        return Ok(await _productServices.GetAsync());
     }
 
     [HttpGet("{id:Guid}")]
