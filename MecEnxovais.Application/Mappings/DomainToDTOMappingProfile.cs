@@ -2,6 +2,7 @@
 using MecEnxovais.Application.DTOs.Address;
 using MecEnxovais.Application.DTOs.Category;
 using MecEnxovais.Application.DTOs.Client;
+using MecEnxovais.Application.DTOs.Company;
 using MecEnxovais.Application.DTOs.Product;
 using MecEnxovais.Application.DTOs.User;
 using MecEnxovais.Domain.Entities;
@@ -17,5 +18,6 @@ public class DomainToDTOMappingProfile : Profile
         CreateMap<Address, AddressResponseDTO>().ReverseMap();
         CreateMap<User, UserResponseDTO>().ReverseMap();
         CreateMap<Client, ClientResponseDTO>().ReverseMap();
+        CreateMap<Company, CompanyResponseDTO>().ReverseMap();
     }
 }

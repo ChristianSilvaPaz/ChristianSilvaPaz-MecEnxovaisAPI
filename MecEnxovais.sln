@@ -13,12 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MecEnxovais.CrossCutting", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MecEnxovais.Api", "MecEnxovais.Api\MecEnxovais.Api.csproj", "{437C3B11-9923-4F09-9D25-A508CFEBD52C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{F661365A-788A-4BF4-B625-22A0362CEFF6}"
-	ProjectSection(SolutionItems) = preProject
-		buildespec.yml = buildespec.yml
-		Procfile.txt = Procfile.txt
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

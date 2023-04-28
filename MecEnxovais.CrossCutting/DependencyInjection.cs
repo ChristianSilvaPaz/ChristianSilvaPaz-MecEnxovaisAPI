@@ -26,12 +26,14 @@ public static class DependencyInjection
         services.AddScoped<IUserServices, UserServices>();
         services.AddScoped<IAuthServices, AuthServices>();
         services.AddScoped<ILoginServices, LoginServices>();
+        services.AddScoped<ICompanyServices, CompanyServices>();
 
         services.AddScoped<ICategoryRepository, CategoryRepository>();
         services.AddScoped<IProductRepository, ProductRepository>();
         services.AddScoped<IClientRepository, ClientRepository>();
         services.AddScoped<IAddressRepository, AddressRepository>();
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<ICompanyRespository, CompanyRepository>();
 
         return services;
     }
