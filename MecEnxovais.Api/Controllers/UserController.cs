@@ -7,7 +7,6 @@ namespace MecEnxovais.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class UserController : ControllerBase
     {
         private readonly IUserServices _userServices;
