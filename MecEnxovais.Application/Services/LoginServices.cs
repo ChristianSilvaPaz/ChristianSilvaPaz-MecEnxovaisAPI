@@ -22,7 +22,7 @@ public class LoginServices : ILoginServices
 
         if (userEntity == null)
         {
-            result.AddErrors("Login", "Utilizador não encontado");
+            result.AddErrors("Email", "Utilizador não encontado");
             return result;
         }
 
@@ -30,7 +30,7 @@ public class LoginServices : ILoginServices
 
         if (!passwordHash.Equals(userEntity.Password))
         {
-            result.AddErrors("Login", "Senha inválida");
+            result.AddErrors("Senha", "Senha inválida");
             return result;
         }
 
