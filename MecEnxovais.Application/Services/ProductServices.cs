@@ -31,7 +31,7 @@ public class ProductServices : IProductServices
 
     public async Task<ProductResponseDTO> CreateAsync(ProductCreateDTO product)
     {
-        var productEntity = new Product(product.Name, product.Price, product.Amount, product.Image, product.CategoryId);
+        var productEntity = new Product(product.Name, product.Price, product.Amount, product.CategoryId);
 
         await _productRepository.CreateAsync(productEntity);
         return _mapper.Map<ProductResponseDTO>(productEntity);
@@ -48,7 +48,8 @@ public class ProductServices : IProductServices
             return result;
         }
 
-        productEntity.Update(product.Name, product.Price, product.Amount, product.Image, product.CategoryId);
+        productEntity.Update(productEntity, product.Name, product.Price, product.Amount, product.CategoryId);
+        await _productRepository.UpdateAsync(productEntity);
 
         return result.WithData(_mapper.Map<ProductResponseDTO>(productEntity));
     }
@@ -63,6 +64,8 @@ public class ProductServices : IProductServices
             result.AddErrors("Produto", "Produto não encontrado");
             return result;
         }
+
+        await _productRepository.DeleteAsync(productEntity);
 
         return result.WithData(_mapper.Map<ProductResponseDTO>(productEntity));
     }

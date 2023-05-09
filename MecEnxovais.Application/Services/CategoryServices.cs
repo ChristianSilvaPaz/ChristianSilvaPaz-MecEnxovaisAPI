@@ -47,7 +47,8 @@ public class CategoryServices : ICategoryServices
             return result;
         }
 
-        categoryEntity.Update(category.Name);
+        categoryEntity.Update(categoryEntity, category.Name);
+        await _categoryRepository.UpdateAsync(categoryEntity);
 
         return result.WithData(_mapper.Map<CategoryResponseDTO>(categoryEntity));
     }
@@ -62,6 +63,8 @@ public class CategoryServices : ICategoryServices
             result.AddErrors("Categoria", "Categoria não encontrada");
             return result;
         }
+
+        await _categoryRepository.DeleteAsync(categoryEntity);
 
         return result.WithData(_mapper.Map<CategoryResponseDTO>(categoryEntity));
     }

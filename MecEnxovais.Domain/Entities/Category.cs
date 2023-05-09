@@ -13,9 +13,9 @@ public sealed class Category : Entity
         Products = new Collection<Product>();
     }
 
-    public void Update(string name)
+    public void Update(Category category, string name)
     {
-        DateUpdate = DateTime.Now;
+        category.DateUpdate = DateTime.Now;
         Name = name;
     }
 }

@@ -19,9 +19,6 @@ public class ProductCreateDTO
     [Range(1, 100, ErrorMessage = "Quantidade deve ser maior que 0")]
     public int Amount { get; set; }
 
-    [DisplayName("Imagem")]
-    public byte Image { get; set; }
-
     [DisplayName("ID da Categoria")]
     [Required(ErrorMessage = "Informe o ID da categoria")]
     public Guid CategoryId { get; set; }
