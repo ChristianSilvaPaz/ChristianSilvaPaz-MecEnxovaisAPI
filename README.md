@@ -10,7 +10,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 <ul>
   <li> <a href="https://dotnet.microsoft.com/pt-br/download/dotnet/7.0"> .NET 7 ou superior </li>
-  <li> <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-downloads" SQL Server 12 ou superior> </li>
+  <li> <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-downloads"> SQL Server 12 ou superior </li>
 </ul>
 
 # :wrench: Clonar, configurar e executar
@@ -29,7 +29,7 @@ Altere a seção ConnectionStrings com as informações de conexão com o SqlSer
 }
 
 ## 2. Subindo o Backend
-Observação: os passos abaixo foram realizados utilizando um ambiente de desenvolvimento integrado como o <a href="https://visualstudio.microsoft.com/pt-br/" Microsoft Visual Studio>, basta abrir a solução MecEnxovais.sln que está na pasta src e executar o projeto MecEnxaovais.API
+Observação: os passos abaixo foram realizados utilizando um ambiente de desenvolvimento integrado como o Microsoft Visual Studio, basta abrir a solução MecEnxovais.sln que está na pasta src e executar o projeto MecEnxaovais.API
   
 Após isto, a Web API estará em pleno funcionamento. É possível visualizar a documentação e testar API, essa tela deverá aparecer na aba do seu navegador:
  
@@ -39,12 +39,12 @@ Após isto, a Web API estará em pleno funcionamento. É possível visualizar a 
 Ferramentas/tecnologias utilizadas para construção deste projeto
 
   <ul>
-    <li> <a href="https://dotnet.microsoft.com/pt-br/download/dotnet/7.0" .NET 7 - Backend e Web API></li>
-    <li> <a href="https://learn.microsoft.com/pt-br/ef/core/" Entity Framework Core - Mapeamento objeto-relacionalI</li>
-    <li> <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-downloads" SQL Server - Banco de dados relacional</li>
-    <li> <a href="https://learn.microsoft.com/pt-br/ef/ef6/modeling/code-first/fluent/types-and-properties" Fluent API - Configuração e o mapeamento no EF</li>
-    <li> <a href="https://visualstudio.microsoft.com/pt-br/vs/" Visual Studio 2022 - IDE C# / .NET</li>
-    <li> <a href="https://swagger.io/" Swagger - Documentação e teste da API</li>
+    <li> <a href="https://dotnet.microsoft.com/pt-br/download/dotnet/7.0">.NET 7 - Backend e Web API</li>
+    <li> <a href="https://learn.microsoft.com/pt-br/ef/core/">Entity Framework Core - Mapeamento objeto-relacionalI </li>
+    <li> <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-downloads">SQL Server - Banco de dados relacional</li>
+    <li> <a href="https://learn.microsoft.com/pt-br/ef/ef6/modeling/code-first/fluent/types-and-properties"> Fluent API - Configuração e o mapeamento no EF</li>
+    <li> <a href="https://visualstudio.microsoft.com/pt-br/vs/"> Visual Studio 2022 - IDE C# / .NET</li>
+    <li> <a href="https://swagger.io/"> Swagger - Documentação e teste da API</li>
   </ul>
 
 # :books: Arquitetura
