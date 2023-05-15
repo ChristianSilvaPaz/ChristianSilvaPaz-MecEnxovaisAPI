@@ -8,7 +8,7 @@ public class ClientResponseDTO
     public string? PhoneNumber1 { get; set; }
     public string? PhoneNumber2 { get; set; }
     public string? Cpf { get; set; }
-    public DateTime? BirthDate { get; set; }
+    public string? BirthDate { get; set; }
     public string? MaritalStatus { get; set; }
     public string? Sex { get; set; }
     public string? Rg { get; set; }

@@ -5,7 +5,7 @@ public sealed class Client : Entity
     public string? PhoneNumber1 { get; private set; }
     public string? PhoneNumber2 { get; private set; }
     public string? Cpf { get; private set; }
-    public DateTime? BirthDate { get; private set; }
+    public string? BirthDate { get; private set; }
     public string? MaritalStatus { get; private set; }
     public string? Sex { get; private set; }
     public string? Rg { get; private set; }
@@ -16,7 +16,7 @@ public sealed class Client : Entity
 
     public Address? Address { get; set; }
 
-    public Client(string name, string phoneNumber1, string phoneNumber2, string cpf, DateTime? birthDate,
+    public Client(string name, string phoneNumber1, string phoneNumber2, string cpf, string? birthDate,
         string maritalStatus, string sex, string rg, string dispatchingAgency, string referencePhone1,
         string referencePhone2, string referencePhone3)
     {
@@ -35,7 +35,7 @@ public sealed class Client : Entity
         ReferencePhone3 = referencePhone3;
     }
 
-    public void Update(string? name, string? phoneNumber1, string? phoneNumber2, string? cpf, DateTime? birthDate,
+    public void Update(string? name, string? phoneNumber1, string? phoneNumber2, string? cpf, string? birthDate,
         string? maritalStatus, string? sex, string? rg, string? dispatchingAgency, string? referencePhone1,
         string? referencePhone2, string? referencePhone3)
     {

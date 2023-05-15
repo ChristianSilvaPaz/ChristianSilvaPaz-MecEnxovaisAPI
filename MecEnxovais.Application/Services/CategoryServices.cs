@@ -64,6 +64,12 @@ public class CategoryServices : ICategoryServices
             return result;
         }
 
+        if (categoryEntity.Products.Any())
+        {
+            result.AddErrors("Categoria", "Existem produtos cadastrados nessa categoria");
+            return result;
+        }
+
         await _categoryRepository.DeleteAsync(categoryEntity);
 
         return result.WithData(_mapper.Map<CategoryResponseDTO>(categoryEntity));

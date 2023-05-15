@@ -28,7 +28,7 @@ public class ClientCreateDTO
     [DisplayName("Data de Nascimento")]
     [Required(ErrorMessage = "Data de nascimento é obrigatório")]
     [DisplayFormat(DataFormatString = "dd/mm/yyyy")]
-    public DateTime? BirthDate { get; set; }
+    public string? BirthDate { get; set; }
 
     [Required(ErrorMessage = "Estado civil é obrigatório")]
     [DisplayName("Estado Civil")]
