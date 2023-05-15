@@ -9,7 +9,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 :clipboard: Pré-requisitos
 
 <ul>
-  <li> <a href="https://dotnet.microsoft.com/pt-br/download/dotnet/7.0" .NET 7 ou superior> </li>
+  <li> <a href="https://dotnet.microsoft.com/pt-br/download/dotnet/7.0"> .NET 7 ou superior </li>
   <li> <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-downloads" SQL Server 12 ou superior> </li>
 </ul>
 
