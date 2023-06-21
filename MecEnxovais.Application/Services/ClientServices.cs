@@ -35,8 +35,8 @@ public class ClientServices : IClientServices
     public async Task<ClientResponseDTO> CreateAsync(ClientCreateDTO client)
     {
         var clientEntity = new Client(client.Name, client.PhoneNumber1, client.PhoneNumber2, client.Cpf, client.BirthDate,
-            client.MaritalStatus, client.Sex, client.Rg, client.DispatchingAgency, client.ReferencePhone1,
-            client.ReferencePhone2, client.ReferencePhone3);
+            client.MaritalStatus, client.Sex, client.Rg, client.DispatchingAgency, client.ReferenceName1, client.ReferencePhone1,
+            client.ReferenceName2, client.ReferenceName3, client.ReferencePhone2, client.ReferencePhone3);
 
         await _clientRepository.CreateAsync(clientEntity);
 
@@ -63,8 +63,8 @@ public class ClientServices : IClientServices
         }
 
         clientEntity.Update(client.Name, client.PhoneNumber1, client.PhoneNumber2, client.Cpf, client.BirthDate,
-            client.MaritalStatus, client.Sex, client.Rg, client.DispatchingAgency, client.ReferencePhone1,
-            client.ReferencePhone2, client.ReferencePhone3);
+            client.MaritalStatus, client.Sex, client.Rg, client.DispatchingAgency, client.ReferenceName1, client.ReferencePhone1,
+            client.ReferenceName2, client.ReferenceName3, client.ReferencePhone2, client.ReferencePhone3);
 
         addressEntity.Update(client.Address.PublicPlace, client.Address.Neighborhood, client.Address.City,
             client.Address.ZipCode, client.Address.PointReference, id);

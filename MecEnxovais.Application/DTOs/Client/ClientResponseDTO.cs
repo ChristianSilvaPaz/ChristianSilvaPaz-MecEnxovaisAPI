@@ -13,6 +13,11 @@ public class ClientResponseDTO
     public string? Sex { get; set; }
     public string? Rg { get; set; }
     public string? DispatchingAgency { get; set; }
+
+    public string? ReferenceName1 { get; set; }
+    public string? ReferenceName2 { get; set; }
+    public string? ReferenceName3 { get; set; }
+
     public string? ReferencePhone1 { get; set; }
     public string? ReferencePhone2 { get; set; }
     public string? ReferencePhone3 { get; set; }
