@@ -36,4 +36,4 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 
-app.Run("http://*:80");
+app.Run("https://*:443");
