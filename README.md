@@ -4,7 +4,7 @@ Backend do software desenvolvido com o propósito de facilitar o controle de est
 
 # :rocket: Começando
 
-Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste. a
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
 :clipboard: Pré-requisitos
 
