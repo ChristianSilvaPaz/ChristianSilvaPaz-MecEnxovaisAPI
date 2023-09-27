@@ -15,8 +15,12 @@ public class ApplicationDbContext : DbContext
     public DbSet<Address> Addresses { get; set; }
     public DbSet<User> Users { get; set; }
     public DbSet<Company> Companies { get; set; }
-    //public DbSet<SaleItem> SalesItems { get; set; }
-    //public DbSet<Sale> Sales { get; set; }
+
+    public DbSet<StockMovement> StockMovements { get; set; }
+    public DbSet<MovementInstalment> MovementInstalments { get; set; }
+    public DbSet<MovementItem> MovementsItems { get; set; }
+
+    public DbSet<FinancialMovement> FinancialMovements { get; set; }
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
@@ -46,5 +50,9 @@ public class ApplicationDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
+
+        Company company = new Company("MecEnxovais");
+        modelBuilder.Entity<Company>().HasData(company);
+        modelBuilder.Entity<User>().HasData(new User("admin", "admin", "admin admin", "admin@admin.com", "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4", company.Id));
     }
 }

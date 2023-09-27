@@ -27,6 +27,7 @@ public static class DependencyInjection
         services.AddScoped<IAuthServices, AuthServices>();
         services.AddScoped<ILoginServices, LoginServices>();
         services.AddScoped<ICompanyServices, CompanyServices>();
+        services.AddScoped<IStockMovementServices, StockMovementServices>();
 
         services.AddScoped<ICategoryRepository, CategoryRepository>();
         services.AddScoped<IProductRepository, ProductRepository>();
@@ -34,6 +35,7 @@ public static class DependencyInjection
         services.AddScoped<IAddressRepository, AddressRepository>();
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<ICompanyRespository, CompanyRepository>();
+        services.AddScoped<IStockMovementRepository, StockMovementRepository>();
 
         return services;
     }

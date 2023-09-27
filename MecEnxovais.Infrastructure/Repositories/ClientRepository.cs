@@ -4,6 +4,7 @@ using MecEnxovais.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace MecEnxovais.Infrastructure.Repositories;
+
 public class ClientRepository : IClientRepository
 {
     private readonly ApplicationDbContext _context;

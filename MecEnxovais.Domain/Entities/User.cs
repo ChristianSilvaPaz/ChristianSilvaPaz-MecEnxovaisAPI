@@ -1,4 +1,5 @@
 ﻿namespace MecEnxovais.Domain.Entities;
+
 public sealed class User : Entity
 {
     public string? FirstName { get; private set; }

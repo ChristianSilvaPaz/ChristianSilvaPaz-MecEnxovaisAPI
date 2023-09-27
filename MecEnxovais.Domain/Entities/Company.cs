@@ -1,4 +1,5 @@
 ﻿namespace MecEnxovais.Domain.Entities;
+
 public sealed class Company : Entity
 {
     public string? Name { get; private set; }

@@ -1,4 +1,5 @@
 ﻿namespace MecEnxovais.Domain.Entities;
+
 public sealed class Address : Entity
 {
     public string? PublicPlace { get; private set; }
@@ -9,7 +10,6 @@ public sealed class Address : Entity
 
     public Guid ClientId { get; set; }
     public Client? Client { get; set; }
-
 
     public Address(string? publicPlace, string? neighborhood, string? city, string? zipCode, string? pointReference, Guid clientId)
     {

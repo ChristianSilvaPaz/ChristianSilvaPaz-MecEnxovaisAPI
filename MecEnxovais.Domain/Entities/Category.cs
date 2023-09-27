@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 
 namespace MecEnxovais.Domain.Entities;
+
 public sealed class Category : Entity
 {
     public string Name { get; private set; }

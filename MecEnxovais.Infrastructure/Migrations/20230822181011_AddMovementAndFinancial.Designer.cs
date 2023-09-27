@@ -4,6 +4,7 @@ using MecEnxovais.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MecEnxovais.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230822181011_AddMovementAndFinancial")]
+    partial class AddMovementAndFinancial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -70,7 +73,7 @@ namespace MecEnxovais.Infrastructure.Migrations
                     b.HasIndex("ClientId")
                         .IsUnique();
 
-                    b.ToTable("Addresses", (string)null);
+                    b.ToTable("Addresses");
                 });
 
             modelBuilder.Entity("MecEnxovais.Domain.Entities.Category", b =>
@@ -95,7 +98,7 @@ namespace MecEnxovais.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories", (string)null);
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("MecEnxovais.Domain.Entities.Client", b =>
@@ -178,7 +181,7 @@ namespace MecEnxovais.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Clients", (string)null);
+                    b.ToTable("Clients");
                 });
 
             modelBuilder.Entity("MecEnxovais.Domain.Entities.Company", b =>
@@ -203,7 +206,7 @@ namespace MecEnxovais.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Companies", (string)null);
+                    b.ToTable("Companies");
 
                     b.HasData(
                         new
@@ -260,7 +263,7 @@ namespace MecEnxovais.Infrastructure.Migrations
                     b.HasIndex("UserId")
                         .IsUnique();
 
-                    b.ToTable("FinancialMovements", (string)null);
+                    b.ToTable("FinancialMovements");
                 });
 
             modelBuilder.Entity("MecEnxovais.Domain.Entities.MovementInstalment", b =>
@@ -302,7 +305,7 @@ namespace MecEnxovais.Infrastructure.Migrations
                     b.HasIndex("StockMovementId")
                         .IsUnique();
 
-                    b.ToTable("MovementInstalments", (string)null);
+                    b.ToTable("MovementInstalments");
                 });
 
             modelBuilder.Entity("MecEnxovais.Domain.Entities.MovementItem", b =>
@@ -355,7 +358,7 @@ namespace MecEnxovais.Infrastructure.Migrations
 
                     b.HasIndex("StockMovementId");
 
-                    b.ToTable("MovementsItems", (string)null);
+                    b.ToTable("MovementsItems");
                 });
 
             modelBuilder.Entity("MecEnxovais.Domain.Entities.Product", b =>
@@ -392,7 +395,7 @@ namespace MecEnxovais.Infrastructure.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products", (string)null);
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("MecEnxovais.Domain.Entities.StockMovement", b =>
@@ -431,7 +434,7 @@ namespace MecEnxovais.Infrastructure.Migrations
                     b.HasIndex("UserId")
                         .IsUnique();
 
-                    b.ToTable("StockMovements", (string)null);
+                    b.ToTable("StockMovements");
                 });
 
             modelBuilder.Entity("MecEnxovais.Domain.Entities.User", b =>
@@ -481,7 +484,7 @@ namespace MecEnxovais.Infrastructure.Migrations
 
                     b.HasIndex("CompanyId");
 
-                    b.ToTable("Users", (string)null);
+                    b.ToTable("Users");
 
                     b.HasData(
                         new
