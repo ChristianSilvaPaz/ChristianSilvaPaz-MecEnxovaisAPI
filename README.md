@@ -29,7 +29,7 @@ Altere a seção ConnectionStrings com as informações de conexão com o SqlSer
 }
 
 ## 2. Subindo o Backend
-Observação: os passos abaixo foram realizados utilizando um ambiente de desenvolvimento integrado como o Microsoft Visual Studio, basta abrir a solução MecEnxovais.sln que está na pasta src e executar o projeto MecEnxaovais.API
+Observação: os passos abaixo foram realizados utilizando um ambiente de desenvolvimento integrado como o Microsoft Visual Studio, basta abrir a solução MecEnxovais.sln que está na pasta src e executar o projeto MecEnxovais.API
   
 Após isto, a Web API estará em pleno funcionamento. É possível visualizar a documentação e testar API, essa tela deverá aparecer na aba do seu navegador:
  
